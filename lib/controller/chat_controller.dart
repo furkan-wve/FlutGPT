@@ -48,7 +48,7 @@ class ChatController extends GetxController {
     var body = jsonEncode({
       "model": "text-davinci-003",
       "prompt": chats[chatIndex].prompt,
-      "temperature": 0,
+      "temperature": 0.5,
       "max_tokens": 500
     });
     try {
@@ -142,7 +142,7 @@ class ChatController extends GetxController {
       "model": "text-davinci-003",
       "prompt": "${chats[promptIndex].prompt}\nMake it a title",
       "temperature": 0,
-      "max_tokens": 150
+      "max_tokens": 50
     });
     try {
       // post request using dio

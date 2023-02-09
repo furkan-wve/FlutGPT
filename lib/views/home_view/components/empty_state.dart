@@ -29,19 +29,20 @@ class _EmptyStateState extends State<EmptyState> {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            Text("FlutGPT", style: Theme.of(context).textTheme.displayLarge),
+            Text("ChatGPT", style: Theme.of(context).textTheme.displayLarge),
             const SizedBox(
               height: 30,
             ),
             ListView.builder(
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                itemCount: 3,
-                itemBuilder: (context, index) {
-                  return IntroCards(
-                    card: list[index],
-                  );
-                }),
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              itemCount: 3,
+              itemBuilder: (context, index) {
+                return IntroCards(
+                  card: list[index],
+                );
+              },
+            ),
           ],
         ),
       ),

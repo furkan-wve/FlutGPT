@@ -15,7 +15,10 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-          appBar: appBar(), drawer: appDrawer(), body: const HomeViewBody()),
+        appBar: appBar(),
+        drawer: appDrawer(),
+        body: const HomeViewBody(),
+      ),
     );
   }
 }
